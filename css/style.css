@@ -24,5 +24,36 @@ body{
     font-size: 23px;
     font-weight: 600;
     padding-bottom: 1px solid #ccc;
+}
+.select-box  .titulo{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.select-box .opciones{
+    display: flex;
+    width: 100%;
+}
 
+.opciones button{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    background: #9DC0BC;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.opciones button:hover{
+    transform: scale(0.95);
+}
+.opciones button.jugadorX{
+    margin-right: 5px;
+}
+.opciones button.jugadorO{
+    margin-left: 5px;
 }
