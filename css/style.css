@@ -10,7 +10,7 @@
 body{
     background: #9DC0BC;
 }
-.select-box, .play-board{
+.select-box, .play-board, .caja-resultado{
     position:absolute;
     top: 50%;
     left: 50%;
@@ -53,7 +53,8 @@ body{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.opciones button:hover{
+.opciones button:hover,
+.caja-resultado .btn button:hover{
     transform: scale(0.95);
 }
 .opciones button.jugadorX{
@@ -67,6 +68,10 @@ body{
     background: #fff;
     padding: 7px;
     border-radius: 5px;
+}
+.play-board{
+display: none;
+
 }
 .play-board .detalles .jugadores{
     display: flex;
@@ -119,5 +124,37 @@ z-index: 2;
     text-align: center;
     line-height: 80px;
     color: #9DC0BC;
+}
 
+.caja-resultado{
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 350px;
+    width: 100%;
+    /*display: none;*/
+}
+.caja-resultado .texto-ganador{
+    font-size: 25px;
+    font-weight: 500;
+    display:flex;
+    justify-content: center;
+}
+
+.caja-resultado .btn{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.caja-resultado .btn button{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    background: #9DC0BC;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
